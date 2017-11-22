@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const extractSass = new ExtractTextPlugin({
@@ -9,9 +8,6 @@ module.exports = {
   entry: './index.js',
   output: {
     filename: 'scripts.js'
-  },
-  devServer: {
-    contentBase: './'
   },
   module: {
     rules: [{
